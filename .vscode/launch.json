@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch PHP Server",
+            "type": "php",
+            "request": "launch",
+            "runtimeExecutable": "php",
+            "runtimeArgs": [
+                "-S", "localhost:8080",
+                "-t", "${workspaceFolder}"
+            ],
+            "port": 9003,
+            "serverReadyAction": {
+                "pattern": "Development Server .+ started",
+                "uriFormat": "http://localhost:8080",
+                "action": "openExternally"
+            },
+            "env": {
+                "DB_HOST": "",
+                "DB_USER": "",
+                "DB_PASS": "",
+                "DB_NAME": "",
+                "AUTH_USERNAME": "",
+                "AUTH_PASSWORD": "",
+                "ADMIN_USERNAME": "",
+                "ADMIN_PASSWORD_HASH": "",
+                "VISITOR_SALT": ""
+            }
+        }
+    ]
+}
